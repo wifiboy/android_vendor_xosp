@@ -235,9 +235,10 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.reborn.version=$(REBORN_VERSION) \
+  ro.mod.version=$(REBORN_VERSION) \
   ro.reborn.releasetype=$(REBORN_BUILDTYPE) \
-  ro.reborn.revision=$(PRODUCT_REVISION) \
+	ro.reborn.release=$(PRODUCT_RELEASE) \
+  ro.reborn.revision=Revision $(PRODUCT_REVISION) \
   ro.modversion=$(REBORN_VERSION) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
 
