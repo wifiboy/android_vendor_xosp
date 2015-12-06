@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
 
 # This is S+ Reborn
 PRODUCT_COPY_FILES += \
-    vendor/reborn/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.xosp.android.xml
+    vendor/reborn/config/permissions/com.xosp.android.xml:system/etc/permissions/com.xosp.android.xml
 
 # T-Mobile theme engine
 include vendor/reborn/config/themes_common.mk
@@ -235,9 +235,9 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.reborn.version=$(CM_VERSION) \
-  ro.reborn.releasetype=$(CM_BUILDTYPE) \
-	ro.reborn.revision=$(PRODUCT_REVISION) \
+  ro.reborn.version=$(REBORN_VERSION) \
+  ro.reborn.releasetype=$(REBORN_BUILDTYPE) \
+  ro.reborn.revision=$(PRODUCT_REVISION) \
   ro.modversion=$(REBORN_VERSION) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
 
