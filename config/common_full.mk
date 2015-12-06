@@ -1,7 +1,7 @@
-# Inherit common CM stuff
+# Inherit common stuff
 $(call inherit-product, vendor/reborn/config/common.mk)
 
-# Include CM audio files
+# Include audio files
 include vendor/reborn/config/reborn_audio.mk
 
 # Optional S+ Reborn packages

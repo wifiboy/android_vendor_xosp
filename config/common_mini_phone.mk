@@ -18,4 +18,4 @@ ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
         vendor/reborn/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
 endif
 
-$(call inherit-product, vendor/reborn/config/telephony.mk)
+$(call inherit-product, vendor/reborn/config/reborn.mk)
