@@ -1,8 +1,5 @@
-***************************************************
-                S+ Reborn ChangeLOG              
-***************************************************
 
-Visit the official thread on XDA http://forum.xda-developers.com/showthread.php?t=2433523
+#S+ Reborn ChangeLOG              
 
 -----------------------------------
 
@@ -10,7 +7,7 @@ Visit the official thread on XDA http://forum.xda-developers.com/showthread.php?
         Based on Android 5.1        
 **************************************
 
-RL 1 Revsion 1
+##RL1 Revsion 1
 
 - Initial release based on Android 5.1
 
@@ -18,7 +15,7 @@ RL 1 Revsion 1
         Based on Android 5.0        
 **************************************
 
-Beta 2
+##Beta 2
 
 **System**
 
@@ -44,7 +41,7 @@ Beta 2
 - Cleaned up the Xperia folders by removing some old files such as libraries
 - Updated the Xperia Keyboard with new themes (More material adapted theme)
 
-Beta 1
+##Beta 1
 
  **System**
  
@@ -102,7 +99,7 @@ Beta 1
         Based on Android 4.4        
 **************************************
 
-Release 13
+##Release 13
 
  **System**
 
@@ -119,7 +116,7 @@ Release 13
 - Clear Audio is available again in Walkman settings
 - New updated Xperia Calendar to Z3 version 
 
-Release 12
+##Release 12
 
  **System**
 
@@ -160,7 +157,7 @@ Release 12
 - Some other minor changes made in the aroma installer 
 - Added Signature and ROM verification 
 
-Release 11
+##Release 11
 
  **System**
 
@@ -194,7 +191,7 @@ Reborn Tweaks V6
 - Updated host file regarding the Ads Block 
 
 
-Release 10
+##Release 10
 
  **System**
 
@@ -231,15 +228,15 @@ Release 10
 - build.Prop cleanup 
 - New Liquid Tweaks 
 
-Release 9
+##Release 9
 
-Skipped
+- Skipped
 
-Release 8
+##Release 8
 
-Skipped
+- Skipped
 
-Release 7
+##Release 7
 
  **System**
 
@@ -266,7 +263,7 @@ build.prop
 
 -Removed old Xperia Tweaks and replaced with the Reborn Audio Tweaks(credits to Applicare Studios)
   
-Release 6
+##Release 6
 
  **System** 
 
@@ -317,7 +314,7 @@ init.d
 -  Updated auto-zipalign script (now the script will run also for the framework and system apps) thanks Costinutz32
 
 
-Release 5
+##Release 5
 
 - Merged Latest changes made by ADC Team 
 - Updated K^ Kernel 
@@ -336,7 +333,7 @@ Release 5
 - S+ Reborn is now part of the XOSP Project so the ROM now on will be again S+ Reborn
 - And some other minor things that i don't remember
 
-Release 4
+##Release 4
 
 - Merged Latest changes made by ADC Team (Release 2)
 - Updatad K^ Kernel
@@ -350,8 +347,9 @@ Release 4
 - Removed OTA Updater 
 - Updated Performance Control 
 
-Release 3
-## Rebranded Project Name##
+##Release 3
+
+###Rebranded Project Name
 
 - Merged latest changes made by ADC Team
 - Updated K^ Kernel
@@ -368,7 +366,7 @@ Release 2.1
 
 - Fixed zRAM issue. Check the first post for more informations..
 
-Release 2
+##Release 2
           
 	ROM More Faster than EVER!!
 - Updated ROM Base to the latest by ADC Team
@@ -392,7 +390,7 @@ Release 2
 - Updated Movies to version 5.3.A.0.18 with VideoUnlimited
 - And a lot of other fixes that i don't remember :)  
 
-Release 1
+##Release 1
 
 - Initial Release 
 
@@ -401,14 +399,14 @@ Release 1
 **************************************
 
 
-Beta 2
+##Beta 2
 
 - Changed ROM Base to Carbon ROM by educk
 - Changed Ka Kernel to Phenom Kernel by educk
 - Added ROM Stats
 - Updated Performance Control 
 
-Beta 1
+##Beta 1
  
 - Initial Release
 
@@ -417,7 +415,7 @@ Beta 1
 **************************************
 
 
-Release 6 PMEM (EOL)
+##Release 6 PMEM (EOL)
 
 - Updated K^Kernel to 2.5 Version (Thanks Christopher)
 - Updated ROM Base to the Release 8 by ADC Team
@@ -433,7 +431,7 @@ Release 6 PMEM (EOL)
   PLEASE REFER to the ADC Team thread to how to recalibrate the sensors!!
 
 
-Release 5
+##Release 5
 
 - Updated K^Kernel to 2.3 Version (Thanks Christopher)
 - Added Viper4Android FX Engine
@@ -444,7 +442,7 @@ Release 5
 - Fixed the non Displayed Icons (Maybe)
 
 
-Release 4
+##Release 4
 
 - Removed Xperia Z Launcher and Added Xperia Z Ultra Launcher
 - Updated Xperia Tweaks in build.prop
@@ -461,7 +459,7 @@ Release 4
 - Some other improvements made to the ROM
 
 
-Release 3
+##Release 3
 
 - Updated ROM Base to CM 10.1 Release 7 By ADC Team
 - Updated Kernel to 2.2 Version (Thanks Christopher)
@@ -471,7 +469,7 @@ Release 3
 - Updated Performance Control  
 
 
-Release 2
+##Release 2
  
 - Deleted some unused files
 - Updated Xperia System Theme 
@@ -482,7 +480,7 @@ Release 2
 - Removed Wikipedia plug-in
 
 
-Release 1
+##Release 1
  
 - Updated ROM Base To CM 10.1 RC 6
 - Added Xperia Fonts
@@ -497,7 +495,7 @@ Release 1
 - Fixed The Bug with the Theme Chooser, Now its fine
 
 
-Beta 1.5
+##Beta 1.5
 
 - Added Bravia Engine 3
 - Removed zGapps
@@ -505,6 +503,6 @@ Beta 1.5
 - Added OTA Updater Support
 
 
-Beta 1 
+##Beta 1 
 
 - Initial Release

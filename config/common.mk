@@ -67,7 +67,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/reborn/CHANGELOG.mkdn:system/etc/Changelog.txt
+    vendor/reborn/README.mkdn:system/etc/Changelog.txt
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
