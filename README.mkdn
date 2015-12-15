@@ -7,6 +7,16 @@
         Based on Android 5.1        
 **************************************
 
+##RL1 Revision 2
+
+- Sources synced with the latest ones from CM
+- Fixed APNs problems (No need now to setup manually, it should be all automatic now)
+- Re-organized Dashboard categories and created a custom activity for the future Reborn features
+- Included Weather, the newest Xperia App included in the ROM 
+- Differentiate the Startup from the Upgrading up when power on the phone
+- Re-worked the framework colors, now the Indigo color should be a bit more brighter 
+- Updated Default wallpaper (More indigo style)
+
 ##RL1 Revsion 1
 
 - Initial release based on Android 5.1
