@@ -12,3 +12,5 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/reborn/overlay/dictionaries
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Tejat.ogg \
     ro.config.alarm_alert=xperia.ogg
+    
+$(call inherit-product, vendor/reborn/config/telephony.mk)
