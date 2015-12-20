@@ -10,6 +10,8 @@ PRODUCT_COPY_FILES += \
 		vendor/reborn/prebuilt/common/apps/Sketch.apk:system/app/Sketch/Sketch.apk \
 		vendor/reborn/prebuilt/common/apps/Video.apk:system/priv-app/Video/Video.apk \
 		vendor/reborn/prebuilt/common/apps/Weather.apk:system/app/Weather/Weather.apk \
-		vendor/reborn/prebuilt/common/apps/WeatherWidget.apk:system/app/WeatherWidget/WeatherWidget.apk
+		vendor/reborn/prebuilt/common/apps/WeatherWidget.apk:system/app/WeatherWidget/WeatherWidget.apk \
+		vendor/reborn/prebuilt/common/apps/SmartConnect.apk:system/app/SmartConnect/SmartConnect.apk \
+		vendor/reborn/prebuilt/common/apps/AudioRecorder.apk:system/app/AudioRecorder/AudioRecorder.apk
 
 $(call inherit-product, vendor/reborn/config/reborn_extras.mk)
