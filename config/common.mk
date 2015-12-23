@@ -193,6 +193,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/reborn/overlay/common
 
 PRODUCT_RELEASE = RL1
 PRODUCT_REVISION = 1
+PRODUCT_REVISION_PROP = Revision1 
 
 ifndef REBORN_BUILDTYPE
     ifdef RELEASE_TYPE
@@ -215,7 +216,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.mod.version=$(REBORN_VERSION) \
   ro.reborn.releasetype=$(REBORN_BUILDTYPE) \
   ro.reborn.release=$(PRODUCT_RELEASE) \
-  ro.reborn.revision=Revision $(PRODUCT_REVISION) \
+  ro.reborn.revision=$(PRODUCT_REVISION_PROP) \
   ro.modversion=$(REBORN_VERSION) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
 
