@@ -139,6 +139,13 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator
+    CMSettingsProvider
+
+# ViperFX
+PRODUCT_COPY_FILES += \
+    vendor/crdroid/prebuilt/viper/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/crdroid/prebuilt/viper/lib/libv4a_fx_ics.so:system/lib/libv4a_fx_ics.so \
+    vendor/crdroid/prebuilt/viper/ViPER4Android.apk:system/priv-app/ViPER4Android.apk
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
