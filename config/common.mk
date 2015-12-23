@@ -113,9 +113,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/reborn/config/permissions/com.xosp.android.xml:system/etc/permissions/com.xosp.android.xml
 
-# T-Mobile theme engine
-include vendor/reborn/config/themes_common.mk
-
 # Required packages
 PRODUCT_PACKAGES += \
     Development \
@@ -143,9 +140,9 @@ PRODUCT_PACKAGES += \
 
 # ViperFX
 PRODUCT_COPY_FILES += \
-    vendor/crdroid/prebuilt/viper/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    vendor/crdroid/prebuilt/viper/lib/libv4a_fx_ics.so:system/lib/libv4a_fx_ics.so \
-    vendor/crdroid/prebuilt/viper/ViPER4Android.apk:system/priv-app/ViPER4Android.apk
+    vendor/reborn/prebuilt/viper/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/reborn/prebuilt/viper/lib/libv4a_fx_ics.so:system/lib/libv4a_fx_ics.so \
+    vendor/reborn/prebuilt/viper/ViPER4Android.apk:system/priv-app/ViPER4Android.apk
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
