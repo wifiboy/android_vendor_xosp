@@ -7,6 +7,19 @@
         Based on Android 5.1        
 **************************************
 
+##RL1 Revision 3
+
+- Sources synced with the latest ones from CM
+- Updated XOSP logo for Settings and framework
+- Implemented CAF Task Manager
+- Using prebuilt Webview by arter97
+- Implemented About Activity in Settings
+- Implemented FAQ Activity in Settings 
+- Added Sony Smart Connect App 
+- Added Sony AudioRecorder
+- Added Xperia Z5 wallpapers which are available in Xperia Launcher (Wallpapers section)
+- Added the possibility to show XOSP logo on Status Bar 
+
 ##RL1 Revision 2
 
 - Sources synced with the latest ones from CM
