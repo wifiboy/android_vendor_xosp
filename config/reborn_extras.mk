@@ -1,6 +1,6 @@
 # Copy S+ Reborn Extras
 
-WALLPAPERS_VENDOR_PATH := vendor/reborn/prebuilt/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers
+WALLPAPERS_VENDOR_PATH := vendor/reborn/prebuilt/common/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers
 WALLPAPERS_SYSTEM_PATH := system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers
 
 PRODUCT_COPY_FILES += \
@@ -31,5 +31,3 @@ PRODUCT_COPY_FILES += \
 		$(WALLPAPERS_VENDOR_PATH)/Dark.png:$(WALLPAPERS_SYSTEM_PATH)/Dark.png \
 		$(WALLPAPERS_VENDOR_PATH)/Light.png:$(WALLPAPERS_SYSTEM_PATH)/Light.png
 
-
-		$(call inherit-product, vendor/reborn/config/telephony.mk)
