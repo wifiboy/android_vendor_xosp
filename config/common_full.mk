@@ -1,24 +1,14 @@
 # Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+$(call inherit-product, vendor/reborn/config/common.mk)
 
 # Include CM audio files
-include vendor/cm/config/cm_audio.mk
+include vendor/reborn/config/reborn_audio.mk
 
-# Optional CM packages
+# Optional S+ Reborn packages
 PRODUCT_PACKAGES += \
-    Galaxy4 \
-    HoloSpiralWallpaper \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    NoiseField \
-    PhaseBeam \
-    PhotoTable \
-    SoundRecorder \
-    PhotoPhase \
     Screencast
 
-# Extra tools in CM
+# Extra tools in S+ Reborn
 PRODUCT_PACKAGES += \
     7z \
     bash \

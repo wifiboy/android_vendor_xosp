@@ -1,10 +1,10 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common stuff
+$(call inherit-product, vendor/reborn/config/common.mk)
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
+# Include S+ Reborn audio files
+include vendor/reborn/config/reborn_audio.mk
 
-# Required CM packages
+# Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
@@ -15,5 +15,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
+        vendor/reborn/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
 endif
