@@ -108,8 +108,7 @@ PRODUCT_PACKAGES += \
     CMUpdater \
     CyanogenSetupWizard \
     CMSettingsProvider \
-    ExactCalculator
-    CMSettingsProvider
+    ExactCalculator \
 
 # ViperFX
 PRODUCT_COPY_FILES += \
