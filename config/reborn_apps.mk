@@ -28,5 +28,11 @@ PRODUCT_COPY_FILES += \
 		vendor/reborn/prebuilt/common/apps/Calendar/etc/permissions/com.sonyericsson.uxpres.xml:system/etc/permissions/com.sonyericsson.uxpres.xml \
 		vendor/reborn/prebuilt/common/apps/Calendar/etc/permissions/com.sonymobile.provider.tasks.xml:system/etc/permissions/com.sonymobile.provider.tasks.xml \
 		vendor/reborn/prebuilt/common/apps/Calendar/etc/permissions/platform.xml:system/etc/permissions/platform.xml
+
+# textinput-tng
+
+PRODUCT_COPY_FILES += \
+		vendor/reborn/prebuilt/common/apps/textinput-tng/textinput-tng.apk:system/priv-app/textinput-tng/textinput-tng.apk \
+		vendor/reborn/prebuilt/common/apps/textinput-tng/lib/arm/libswiftkeysdk-java.so:system/priv-app/textinput-tng/lib/arm/libswiftkeysdk-java.so
 		
 $(call inherit-product, vendor/reborn/config/reborn_extras.mk)
