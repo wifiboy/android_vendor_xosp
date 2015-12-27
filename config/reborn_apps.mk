@@ -1,6 +1,8 @@
 
 # Copy S+ Reborn Apps
 
+# Normal Apps
+
 PRODUCT_COPY_FILES += \
 		vendor/reborn/prebuilt/common/apps/Home.apk:system/app/Home/Home.apk \
 		vendor/reborn/prebuilt/common/apps/SemcClock.apk:system/app/SemcClock/SemcClock.apk \
@@ -14,4 +16,17 @@ PRODUCT_COPY_FILES += \
 		vendor/reborn/prebuilt/common/apps/SmartConnect.apk:system/app/SmartConnect/SmartConnect.apk \
 		vendor/reborn/prebuilt/common/apps/AudioRecorder.apk:system/app/AudioRecorder/AudioRecorder.apk
 
+# Custom Xperia Apps (Propietary frameworks and libs required)
+
+# Semc Calendar 
+
+PRODUCT_COPY_FILES += \
+		vendor/reborn/prebuilt/common/apps/Calendar/SemCalendar.apk:system/priv-app/SemCalendar/SemCalendar.apk \
+		vendor/reborn/prebuilt/common/apps/Calendar/frameworks/com.sonyericsson.uxpres.jar:system/frameworks/com.sonyericsson.uxpres.jar \
+		vendor/reborn/prebuilt/common/apps/Calendar/frameworks/com.sonymobile.provider.tasks.jar:system/frameworks/com.sonymobile.provider.tasks.jar \
+		vendor/reborn/prebuilt/common/apps/Calendar/frameworks/SemcGenericUxpRes.apk:system/frameworks/SemcGenericUxpRes.apk \
+		vendor/reborn/prebuilt/common/apps/Calendar/etc/permissions/com.sonyericsson.uxpres.xml:system/etc/permissions/com.sonyericsson.uxpres.xml \
+		vendor/reborn/prebuilt/common/apps/Calendar/etc/permissions/com.sonymobile.provider.tasks.xml:system/etc/permissions/com.sonymobile.provider.tasks.xml \
+		vendor/reborn/prebuilt/common/apps/Calendar/etc/permissions/platform.xml:system/etc/permissions/platform.xml
+		
 $(call inherit-product, vendor/reborn/config/reborn_extras.mk)
