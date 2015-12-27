@@ -34,5 +34,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 		vendor/reborn/prebuilt/common/apps/textinput-tng/textinput-tng.apk:system/priv-app/textinput-tng/textinput-tng.apk \
 		vendor/reborn/prebuilt/common/apps/textinput-tng/lib/arm/libswiftkeysdk-java.so:system/priv-app/textinput-tng/lib/arm/libswiftkeysdk-java.so
+
+# Album
+
+PRODUCT_COPY_FILES += \
+		vendor/reborn/prebuilt/common/apps/Album/Album.apk:system/priv-app/Album/Album.apk \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libdrmstream_depjb.so:system/priv-app/Album/lib/arm/libdrmstream_depjb.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libgifreader.so:system/priv-app/Album/lib/arm/libgifreader.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libimagecalc.so:system/priv-app/Album/lib/arm/libimagecalc.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libjpeguser.so:system/priv-app/Album/lib/arm/libjpeguser.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libmaketc.so:system/priv-app/Album/lib/arm/libmaketc.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libnativeio.so:system/priv-app/Album/lib/arm/libnativeio.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libsceniccore.so:system/priv-app/Album/lib/arm/libsceniccore.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libspf.so:system/priv-app/Album/lib/arm/libspf.so \
+		vendor/reborn/prebuilt/common/apps/Album/lib/arm/libSQHashGenerator.so:system/priv-app/Album/lib/arm/libSQHashGenerator.so
 		
 $(call inherit-product, vendor/reborn/config/reborn_extras.mk)
