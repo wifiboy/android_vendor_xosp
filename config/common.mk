@@ -108,7 +108,9 @@ PRODUCT_PACKAGES += \
     CMUpdater \
     CyanogenSetupWizard \
     CMSettingsProvider \
-    ExactCalculator
+    ExactCalculator \
+    AudioFX \
+    ThemesProvider
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
