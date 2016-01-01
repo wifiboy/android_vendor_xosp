@@ -4,6 +4,38 @@
 -----------------------------------
 
 **************************************
+        Based on Android 6.0X        
+**************************************
+
+##RL2 Revision 1
+
+- Switched base to CM13 (Android 6.0.1)
+- Sources synced with the latest ones from CM
+- Added Xperia Z5 Calendar (SemCalendar) 
+- Added Xperia Z5 Keyboard (textinput-tng)
+- Completely ported Xperia Z5 Album aka Album
+- Added PhotoEditor 
+- Included bunch of Xperia propietary libs and permissions 
+- Removed ViperFX (Not compatible anymore on Android M)
+- Removed Stock Calendar
+- Removed Stock Google Keyboard
+- Removed Stock Gallery
+- Re-added AudioFX as system equalizer
+- Updated Browser material colors (Grey is much better)
+- BIT: Theme improvements for whole system and Marshmallow adaptions 
+- Added the ability to on/off the Navigation Bar
+- NavBar dimensions (Width and Height)
+- Imported and adapted SlimDim 
+- Added the ability to switch as well on/off HW Keys 
+- Added SlimSeekBar Preference for SlimDim 
+- Added Status bar Network Traffic indicator
+- Updated XOSP Logo in Settings (Again)
+- Other minor improvements to Settings
+- CAF TaskManager is not included in the Release 2 yet, it will be in RL2 Revision 2 
+- System improvements 
+
+
+**************************************
         Based on Android 5.1        
 **************************************
 
