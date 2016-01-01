@@ -85,9 +85,9 @@ PRODUCT_COPY_FILES += \
 # Frameworks
 
 PRODUCT_COPY_FILES += \
-		vendor/reborn/prebuilt/common/frameworks/com.sonyericsson.uxpres.jar:system/frameworks/com.sonyericsson.uxpres.jar \
-		vendor/reborn/prebuilt/common/frameworks/com.sonymobile.provider.tasks.jar:system/frameworks/com.sonymobile.provider.tasks.jar \
-		vendor/reborn/prebuilt/common/frameworks/SemcGenericUxpRes.apk:system/frameworks/SemcGenericUxpRes.apk
+		vendor/reborn/prebuilt/common/frameworks/com.sonyericsson.uxpres.jar:system/framework/com.sonyericsson.uxpres.jar \
+		vendor/reborn/prebuilt/common/frameworks/com.sonymobile.provider.tasks.jar:system/framework/com.sonymobile.provider.tasks.jar \
+		vendor/reborn/prebuilt/common/frameworks/SemcGenericUxpRes.apk:system/framework/SemcGenericUxpRes.apk
 
 # Permissions
 
