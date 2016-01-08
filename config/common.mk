@@ -86,6 +86,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/reborn/config/permissions/com.xosp.android.xml:system/etc/permissions/com.xosp.android.xml
 
+# Viper
+PRODUCT_COPY_FILES += \
+    vendor/reborn/prebuilt/common/apps/MaterialDarkV4A.apk:system/priv-app/MaterialDarkV4A/MaterialDarkV4A.apk \
+    vendor/reborn/prebuilt/common/toolbox:system/toolbox
+    
 # Required packages
 PRODUCT_PACKAGES += \
     Development \
@@ -109,7 +114,6 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    AudioFX \
     ThemesProvider
 
 # CM Platform Library
