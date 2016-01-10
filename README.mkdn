@@ -7,6 +7,23 @@
         Based on Android 6.0X        
 **************************************
 
+##RL2 Revision 2
+
+- Switched to Android 6.0.1_r10
+- Sources synced with the latest ones from CM
+- January security patch level
+- Fixed Clean installation issue
+- Removed AudioFX
+- Implemented a new ViperFX configuration for M based 
+- Xperia APPS are now separated from the ROM
+- Fixed Settings crash in Buttons fragment (SlimDim and NavBarDimensions submenus are working fine now)
+- Some variations in FAQ activity 
+- Updated Album to version: 7.4.A.1.12 
+- Updated Video to version: 9.4.A.1.6 
+- Updated Music to version: 9.1.4.A.2.0beta  
+- Updated Weather app to version: 1.1.A.0.6
+- Updated Sketch to version: 7.0.A.0.2 
+
 ##RL2 Revision 1
 
 - Switched base to CM13 (Android 6.0.1)
