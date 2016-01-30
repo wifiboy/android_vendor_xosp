@@ -93,7 +93,10 @@ PRODUCT_COPY_FILES += \
     vendor/reborn/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
     vendor/reborn/prebuilt/common/lib/soundfx/libv4a_fx_ics:system/lib/soundfx/libv4a_fx_ics \
     vendor/reborn/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh
-    
+
+# T-Mobile theme engine
+include vendor/reborn/config/themes_common.mk
+
 # Required packages
 PRODUCT_PACKAGES += \
     Development \
@@ -117,7 +120,7 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    ThemesProvider
+    CMSettingsProvider
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
