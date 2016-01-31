@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/reborn/prebuilt/common/apps/MaterialDarkV4A.apk:system/priv-app/MaterialDarkV4A/MaterialDarkV4A.apk \
     vendor/reborn/prebuilt/common/addon.d/23-v4a.sh:system/addon.d/23-v4a.sh \
     vendor/reborn/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
-    vendor/reborn/prebuilt/common/lib/soundfx/libv4a_fx_ics:system/lib/soundfx/libv4a_fx_ics \
+    vendor/reborn/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
     vendor/reborn/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh
 
 # T-Mobile theme engine
