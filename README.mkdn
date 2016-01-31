@@ -7,6 +7,28 @@
         Based on Android 6.0X        
 **************************************
 
+##RL3 Revision 1
+
+- Sources synced with the latest ones from CM
+- Using Snap as default camera app
+- Added the ability to hide SU status bar icon 
+- Added the long press back to kill option in the Development Settings
+- Added RAM membar to Recents options 
+- Toast Animations
+- Removed old entry for Manual in Settings/About Phone
+- Theme Chooser is now featured in the ROM 
+- Indigo Material Theme for Theme Chooser
+- Indigo Material Theme for Messaging app 
+- Indigo Material Theme for Dialer app
+- SlimDim improvements
+- Fixed force close of Photo Editor
+- Updated Album to version: 7.4.A.1.20 
+- Updated Music to version: 9.1.4.A.2.1beta 
+- Updated Weather to version: 1.1.A.0.8
+- Updated ViPER Audio Engine
+- More other minor things and optimizations 
+
+
 ##RL2 Revision 2
 
 - Switched to Android 6.0.1_r10
