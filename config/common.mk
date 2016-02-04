@@ -43,7 +43,7 @@ ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/reborn/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/reborn/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/reborn/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/reborn/prebuilt/common/bin/50-reborn.sh:system/addon.d/50-reborn.sh \
     vendor/reborn/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
