@@ -1,6 +1,6 @@
 # Reborn functions that extend build/envsetup.sh
 
-function slim_device_combos() {
+function reborn_device_combos() {
     T="$(gettop)"
     list_file="${T}/vendor/reborn/reborn.devices"
     variant="userdebug"

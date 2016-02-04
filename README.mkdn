@@ -10,7 +10,6 @@
 ##RL3 Revision 1
 
 - Sources synced with the latest ones from CM
-- XOSPApps are now included in the ROM
 - Using Snap as default camera app
 - Added the ability to hide SU status bar icon 
 - Added the long press back to kill option in the Development Settings
