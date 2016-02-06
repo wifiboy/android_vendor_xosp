@@ -214,7 +214,8 @@ ifeq ($(NIGHTLY), true)
     # Let's bring up Nightlies!
         REBORN_BUILD := NIGHTLY
         REBORN_VERSION := S+Reborn-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
-
+endif
+        
 ifeq ($(REBORN_BUILDTYPE), OFFICIAL)
         REBORN_VERSION := S+Reborn-$(PRODUCT_RELEASE)-Revision-$(PRODUCT_REVISION)-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
 
