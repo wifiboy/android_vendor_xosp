@@ -200,6 +200,7 @@ PRODUCT_RELEASE = RL3
 PRODUCT_REVISION = 1
 PRODUCT_REVISION_PROP = Revision1
 XOSP_APPS_CHECK = true
+NIGHTLY = false
 
 ifndef REBORN_BUILDTYPE
     ifdef RELEASE_TYPE
@@ -208,6 +209,11 @@ ifndef REBORN_BUILDTYPE
         REBORN_BUILDTYPE := $(RELEASE_TYPE)
     endif
 endif
+
+ifeq ($(NIGHTLY), true)
+    # Let's bring up Nightlies!
+        REBORN_BUILD := NIGHTLY
+        REBORN_VERSION := S+Reborn-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
 
 ifeq ($(REBORN_BUILDTYPE), OFFICIAL)
         REBORN_VERSION := S+Reborn-$(PRODUCT_RELEASE)-Revision-$(PRODUCT_REVISION)-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
