@@ -7,6 +7,24 @@
         Based on Android 6.0X        
 **************************************
 
+##RL3 Revision 2
+
+- Switched to Android 6.0.1_r10
+- Source synced with the latest ones from CM
+- February security patch level
+- Updated Indigo colors for Settings to allow theming
+- Updated Indigo colors for entire framework to allow theming
+- Double Tap to sleep anywhere on the lockscreen
+- Implemented Dashboard Columns
+- Implemented Dashboard double lines toggle
+- Implemented Device Fragment in About Section 
+- S+ Reborn now officially supports armani,sprout4,mako,vs985,Z00A and Z008
+- Updated XOSP Banner in Settings
+- Snap: Use Album as default gallery when accessing the photos
+- Updated textinput-tng to version: 6.7.A.0.92
+- Updated SemCalendar to version: 20.1.A.1.2
+- Updated Album to version: 7.4.A.1.22 
+
 ##RL3 Revision 1
 
 - Sources synced with the latest ones from CM
