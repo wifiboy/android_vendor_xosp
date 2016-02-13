@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<!-- This feature shows that this is S+ Reborn part of XOSP -->
+<!-- This feature shows that this is XOSP -->
 <permissions>
     <feature name="com.xosp.android" />
 </permissions>

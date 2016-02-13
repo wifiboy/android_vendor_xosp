@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= S+Reborn
+PRODUCT_BRAND ?= XOSP
 
 
 
@@ -36,39 +36,39 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/reborn/README.mkdn:system/etc/Changelog.txt
+    vendor/xosp/README.mkdn:system/etc/Changelog.txt
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/reborn/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/reborn/prebuilt/common/bin/50-reborn.sh:system/addon.d/50-reborn.sh \
-    vendor/reborn/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/xosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/xosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/xosp/prebuilt/common/bin/50-xosp.sh:system/addon.d/50-xosp.sh \
+    vendor/xosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
+    vendor/xosp/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/reborn/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/xosp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/xosp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/xosp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+    vendor/xosp/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/xosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -76,26 +76,26 @@ PRODUCT_COPY_FILES += \
 
 # Bootanimation 
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/xosp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
     
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is S+ Reborn
+# This is XOSP
 PRODUCT_COPY_FILES += \
-    vendor/reborn/config/permissions/com.xosp.android.xml:system/etc/permissions/com.xosp.android.xml
+    vendor/xosp/config/permissions/com.xosp.android.xml:system/etc/permissions/com.xosp.android.xml
 
 # Viper
 PRODUCT_COPY_FILES += \
-    vendor/reborn/prebuilt/common/apps/MaterialDarkV4A.apk:system/priv-app/MaterialDarkV4A/MaterialDarkV4A.apk \
-    vendor/reborn/prebuilt/common/addon.d/23-v4a.sh:system/addon.d/23-v4a.sh \
-    vendor/reborn/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
-    vendor/reborn/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-    vendor/reborn/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh
+    vendor/xosp/prebuilt/common/apps/MaterialDarkV4A.apk:system/priv-app/MaterialDarkV4A/MaterialDarkV4A.apk \
+    vendor/xosp/prebuilt/common/addon.d/23-v4a.sh:system/addon.d/23-v4a.sh \
+    vendor/xosp/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
+    vendor/xosp/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
+    vendor/xosp/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh
 
 # T-Mobile theme engine
-include vendor/reborn/config/themes_common.mk
+include vendor/xosp/config/themes_common.mk
 
 # Required packages
 PRODUCT_PACKAGES += \
@@ -194,49 +194,42 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/reborn/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/xosp/overlay/common
 
 PRODUCT_RELEASE = RL3
 PRODUCT_REVISION = 2
 PRODUCT_REVISION_PROP = Revision2
 XOSP_APPS_CHECK = true
-NIGHTLY = false
 
-ifndef REBORN_BUILDTYPE
+ifndef XOSP_BUILDTYPE
     ifdef RELEASE_TYPE
-        # Starting with "REBORN_" is optional
-        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^REBORN_||g')
-        REBORN_BUILDTYPE := $(RELEASE_TYPE)
+        # Starting with "XOSP_" is optional
+        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^XOSP_||g')
+        XOSP_BUILDTYPE := $(RELEASE_TYPE)
     endif
 endif
-
-ifeq ($(NIGHTLY), true)
-    # Let's bring up Nightlies!
-        REBORN_BUILDTYPE := NIGHTLY
-        REBORN_VERSION := S+Reborn-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
-endif
         
-ifeq ($(REBORN_BUILDTYPE), OFFICIAL)
-        REBORN_VERSION := S+Reborn-$(PRODUCT_RELEASE)-Revision-$(PRODUCT_REVISION)-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
+ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
+        XOSP_VERSION := XOSP-$(PRODUCT_RELEASE)-Revision-$(PRODUCT_REVISION)-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
 
 else
-    # If REBORN_BUILDTYPE is not defined, set to UNOFFICIAL
-    REBORN_BUILDTYPE := UNOFFICIAL
-		  REBORN_VERSION := S+Reborn-$(PRODUCT_RELEASE)-Revision-$(PRODUCT_REVISION)-$(REBORN_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(REBORN_BUILD)
+    # If XOSP_BUILDTYPE is not defined, set to UNOFFICIAL
+    XOSP_BUILDTYPE := UNOFFICIAL
+		  XOSP_VERSION := XOSP-$(PRODUCT_RELEASE)-Revision-$(PRODUCT_REVISION)-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.mod.version=$(REBORN_VERSION) \
-  ro.reborn.releasetype=$(REBORN_BUILDTYPE) \
-  ro.reborn.release=$(PRODUCT_RELEASE) \
-  ro.reborn.revision=$(PRODUCT_REVISION_PROP) \
+  ro.mod.version=$(XOSP_VERSION) \
+  ro.xosp.releasetype=$(XOSP_BUILDTYPE) \
+  ro.xosp.release=$(PRODUCT_RELEASE) \
+  ro.xosp.revision=$(PRODUCT_REVISION_PROP) \
   ro.xosp.apps=$(XOSP_APPS_CHECK) \
-  ro.modversion=$(REBORN_VERSION) \
+  ro.modversion=$(XOSP_VERSION) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
 
--include vendor/reborn-priv/keys/keys.mk
+-include vendor/xosp-priv/keys/keys.mk
 
-REBORN_DISPLAY_VERSION := $(REBORN_VERSION)
+XOSP_DISPLAY_VERSION := $(XOSP_VERSION)
 
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
@@ -259,7 +252,7 @@ ifndef CM_PLATFORM_REV
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.reborn.display.version=$(REBORN_DISPLAY_VERSION)
+  ro.xosp.display.version=$(XOSP_DISPLAY_VERSION)
 
 # CyanogenMod Platform SDK Version
 PRODUCT_PROPERTY_OVERRIDES += \

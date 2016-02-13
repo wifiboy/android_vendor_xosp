@@ -1,10 +1,10 @@
 # Inherit common stuff
-$(call inherit-product, vendor/reborn/config/common.mk)
+$(call inherit-product, vendor/xosp/config/common.mk)
 
-# Include S+ Reborn audio files
-include vendor/reborn/config/cm_audio.mk
+# Include XOSP audio files
+include vendor/xosp/config/xosp_audio.mk
 
-# Required CM packages
+# Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
@@ -13,4 +13,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Tejat.ogg \
     ro.config.alarm_alert=xperia.ogg
     
-$(call inherit-product, vendor/reborn/config/telephony.mk)
+$(call inherit-product, vendor/xosp/config/telephony.mk)

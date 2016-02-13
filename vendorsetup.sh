@@ -1,3 +1,3 @@
-. "$(gettop)/vendor/reborn/build/envsetup.sh"
+. "$(gettop)/vendor/xosp/build/envsetup.sh"
 
-reborn_device_combos
+xosp_device_combos

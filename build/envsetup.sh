@@ -1,8 +1,8 @@
-# Reborn functions that extend build/envsetup.sh
+# XOSP functions that extend build/envsetup.sh
 
-function reborn_device_combos() {
+function xosp_device_combos() {
     T="$(gettop)"
-    list_file="${T}/vendor/reborn/reborn.devices"
+    list_file="${T}/vendor/xosp/xosp.devices"
     variant="userdebug"
 
     if [[ $1 ]]
@@ -24,13 +24,13 @@ function reborn_device_combos() {
     if [[ ! -f "${list_file}" ]]
     then
         echo "unable to find device list: ${list_file}"
-        list_file="${T}/vendor/reborn/reborn.devices"
+        list_file="${T}/vendor/xosp/xosp.devices"
         echo "defaulting device list file to: ${list_file}"
     fi
 
     while IFS= read -r device
     do
-        add_lunch_combo "reborn_${device}-${variant}"
+        add_lunch_combo "xosp_${device}-${variant}"
     done < "${list_file}"
 }
 

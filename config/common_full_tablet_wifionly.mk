@@ -1,12 +1,12 @@
 # Inherit common stuff
-$(call inherit-product, vendor/reborn/config/common_full.mk)
+$(call inherit-product, vendor/xosp/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
 # Include LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/reborn/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/xosp/overlay/dictionaries
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \

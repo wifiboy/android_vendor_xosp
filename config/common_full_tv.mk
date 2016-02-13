@@ -1,5 +1,5 @@
 # Inherit common stuff
-$(call inherit-product, vendor/reborn/config/common_full.mk)
+$(call inherit-product, vendor/xosp/config/common_full.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -1,14 +1,14 @@
 # Inherit common stuff
-$(call inherit-product, vendor/reborn/config/common.mk)
+$(call inherit-product, vendor/xosp/config/common.mk)
 
 # Include audio files
-include vendor/reborn/config/reborn_audio.mk
+include vendor/xosp/config/xosp_audio.mk
 
-# Optional S+ Reborn packages
+# Optional XOSP packages
 PRODUCT_PACKAGES += \
     Screencast
 
-# Extra tools in S+ Reborn
+# Extra tools in XOSP
 PRODUCT_PACKAGES += \
     7z \
     lib7z \
