@@ -1,4 +1,4 @@
-
+ 
 #XOSP ChangeLOG              
 
 -----------------------------------
@@ -9,7 +9,7 @@
 
 ##RL3 Revision 2
 
-- Switched to Android 6.0.1_r10
+- Switched to Android 6.0.1_r13
 - Source synced with the latest ones from CM
 - February security patch level
 - Updated Indigo colors for Settings to allow theming
