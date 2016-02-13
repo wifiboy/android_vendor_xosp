@@ -1,11 +1,11 @@
 #
-# S+ Reborn Audio Files
+# XOSP Audio Files
 #
 
-ALARM_PATH := vendor/reborn/prebuilt/common/media/audio/alarms
-NOTIFICATION_PATH := vendor/reborn/prebuilt/common/media/audio/notifications
-RINGTONE_PATH := vendor/reborn/prebuilt/common/media/audio/ringtones
-UI_PATH := vendor/reborn/prebuilt/common/media/audio/ui
+ALARM_PATH := vendor/xosp/prebuilt/common/media/audio/alarms
+NOTIFICATION_PATH := vendor/xosp/prebuilt/common/media/audio/notifications
+RINGTONE_PATH := vendor/xosp/prebuilt/common/media/audio/ringtones
+UI_PATH := vendor/xosp/prebuilt/common/media/audio/ui
 
 ALARM_PATH_SYSTEM := system/media/audio/alarms
 NOTIFICATION_PATH_SYSTEM := system/media/audio/notifications

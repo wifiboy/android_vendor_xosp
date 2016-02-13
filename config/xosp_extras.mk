@@ -1,6 +1,6 @@
-# Copy S+ Reborn Extras
+# Copy XOSP Extras
 
-WALLPAPERS_VENDOR_PATH := vendor/reborn/prebuilt/common/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers
+WALLPAPERS_VENDOR_PATH := vendor/xosp/prebuilt/common/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers
 WALLPAPERS_SYSTEM_PATH := system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers
 
 PRODUCT_COPY_FILES += \
