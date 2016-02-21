@@ -243,7 +243,7 @@ ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
         XOSP_VERSION := XOSP-$(BUILD_MAJOR).$(BUILD_MINOR)-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
         
         #Build XOSPOTA if the target product is an official one
-        PRODUCT_PACKAGES += \
+        #PRODUCT_PACKAGES += \
 	  XOSPOTA
 
 else
