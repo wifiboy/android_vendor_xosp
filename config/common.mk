@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    CMSettingsProvider
+    CMSettingsProvider \
+    XOSPSetupWizard
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
