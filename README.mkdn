@@ -7,6 +7,34 @@
         Based on Android 6.0X        
 **************************************
 
+##RL4 Revision 1
+
+- ROM completely refactored to XOSP
+- Changed the way how the title of the ROM zip is showed
+- Added more verification flags for the XOSPApps
+- New XOSP black Xperia based bootanimation
+- Sources synced with the latest ones from CM
+- Added the possibility to apply lockscreen wallpapers 
+- On-the-go mode feature completely ported and functional (Available from Power menu)
+- Double tap to sleep on Navigation Bar
+- Added misc sub category in XOSP Settings
+- SystenApp Remover
+- Powermenu: CheckBoxPreference all switched to SwitchPreference
+- Fixed Gesture tile for some devices (Now is hidden for the ones which doesn't support)
+- IMT: Theme improvements
+- Fixed double tap to sleep everywhere on lockscreen
+- Removed SemcClock and added DeskClock instead (So no more Alarm issue)
+- NavBar: Added Flashlight, Camera,Expanded Desktop and Screenshot buttons
+- Enabled Advanced reboot by default
+- Added our own SetupWizard (XOSPSetupWizard)
+- Update Music to version: 1.5.A.1.1beta 
+- Add TrackID 
+- Add News Suite 
+- Update Weather to version: 1.A.0.11 
+- Update Sketch to version: 7.0.A.0.4 
+- Update SmartConnect to version: 5.0.0.00.30.3
+- Some more other minor changes that i don't remember right now 
+
 ##RL3 Revision 2
 
 - Switched to Android 6.0.1_r13
