@@ -149,7 +149,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     CMSettingsProvider \
-    XOSPSetupWizard
+    XOSPSetupWizard \
+	LiveWallpapersPicker 
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
