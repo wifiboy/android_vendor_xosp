@@ -59,6 +59,10 @@ function build_xospapps()
     elif [[ $ARCHTARGET == arm ]]; then
 
     cp -avr arm/META-INF out >&/dev/null
+	
+	elif [[ $ARCHTARGET == arm64 ]]; then
+	
+	cp -avr arm64/META-INF out >&/dev/null
 
     fi
     
