@@ -50,24 +50,12 @@ function build_xospapps()
     XOSPATH=$PRODUCT_OUT
     mkdir -p $XOSPATH
     
-    
-    if [[ $ARCHTARGET == x86 ]]; then
-    
-    cp -avr x86/META-INF out >&/dev/null
-
-
-    elif [[ $ARCHTARGET == arm ]]; then
-
-    cp -avr arm/META-INF out >&/dev/null
-	
-	elif [[ $ARCHTARGET == arm64 ]]; then
-	
-	cp -avr arm64/META-INF out >&/dev/null
-
-    fi
-    
+    cp -avr Script/META-INF out >&/dev/null
     cp -avr Sources/system out >&/dev/null
     cd out
+    UPDATERPATH=META-INF/com/google/android
+    
+    sed -i '8 a TARGET_DEVICE='$DEVICETARGET'' $UPDATERPATH/update-binary
     zip -r "XOSPApps-$DATE-$DEVICETARGET".zip META-INF system >&/dev/null
     mv "XOSPApps-$DATE-$DEVICETARGET.zip" $XOSPATH
     rm -rf META-INF
