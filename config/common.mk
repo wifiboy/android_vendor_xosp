@@ -120,8 +120,13 @@ PRODUCT_COPY_FILES += \
     vendor/xosp/prebuilt/common/addon.d/23-v4a.sh:system/addon.d/23-v4a.sh \
     vendor/xosp/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
     vendor/xosp/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-    vendor/xosp/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh
+    vendor/xosp/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh 
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/xosp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/xosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+	
 # T-Mobile theme engine
 include vendor/xosp/config/themes_common.mk
 
