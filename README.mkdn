@@ -7,6 +7,33 @@
         Based on Android 6.0X        
 **************************************
 
+##RL4 Revision 2
+
+- Sources synced with the latest ones from CM
+- Added arm64 support for XOSPApps
+- XOSPOTA for official devices is now operational
+- Reduced slightly the animation scales
+- Increased Touch sensitivity
+- Improved scrolling cache
+- Speeded up Orientation listner
+- Speeded up long press Timeout 
+- Allow faster app switching 
+- Implemented CAF Task Manager
+- Added ScreenRecording and KillApp buttons to NavigationBar
+- Implemented Dashboard switches
+- Inbuilt ScreenRecording from Omni in SystemUI
+- SystemApp Remover is fully operational now 
+- Removed FAQ Section (It was useless)
+- Updated Translations
+- XOSP goes now Official for Hammerhead
+- Made bigger the XOSP logo in the XOSPSetupWizard
+- Updated System Wallpapers (XOSP-ified them)
+- Using SuperSU from now on, so no more PrivacyGuard
+- LiveWallpapers can now be freely applied 
+- Removed NewsSuite (It's useless)
+- Updated Music to version: 9.1.5.A.2beta 
+
+
 ##RL4 Revision 1
 
 - ROM completely refactored to XOSP
