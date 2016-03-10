@@ -47,7 +47,7 @@ function build_xospapps()
     DEVICETARGET=$(get_build_var TARGET_DEVICE)
     PRODUCT_OUT=$(get_build_var PRODUCT_OUT)
     DATE=` date +%d-%m-%Y`
-    XOSPATH=$PRODUCT_OUT
+    XOSPATH=$PRODUCT_OUT/install/xospapps
     mkdir -p $XOSPATH
     
     cp -avr Script/META-INF out >&/dev/null
@@ -56,8 +56,8 @@ function build_xospapps()
     UPDATERPATH=META-INF/com/google/android
     
     sed -i '8 a TARGET_DEVICE='$DEVICETARGET'' $UPDATERPATH/update-binary
-    zip -r "XOSPApps-$DATE-$DEVICETARGET".zip META-INF system >&/dev/null
-    mv "XOSPApps-$DATE-$DEVICETARGET.zip" $XOSPATH
+    zip -r "XOSPApps".zip META-INF system >&/dev/null
+    mv "XOSPApps.zip" $XOSPATH
     rm -rf META-INF
     rm -rf system
     cd ..
