@@ -149,15 +149,13 @@ PRODUCT_PACKAGES += \
 
 # Custom packages
 PRODUCT_PACKAGES += \
-    CMFileManager \
+    XOSPFileManager \
     LockClock \
-    CMUpdater \
-    CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
     CMSettingsProvider \
     XOSPSetupWizard \
-	LiveWallpapersPicker 
+    LiveWallpapersPicker 
 
 # Exchange support
 PRODUCT_PACKAGES += \
