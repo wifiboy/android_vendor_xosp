@@ -7,6 +7,43 @@
         Based on Android 6.0X        
 **************************************
 
+##RL5 Revision 1
+
+- Sources synced with the latest ones from CM
+- Switched to Android 6.0.1_r22
+- March security patch level
+- XOSPApps are now included in the ROM (So no more separate package for them)
+- Replaced default nav bar icons with Xperia ones
+- Refactored many Framework and SystemUi drawables to Xperia ones
+- Added XOSPFileManager and removed CMFileManager
+- NavBar and Status Bar are now fully transparent in Xperia Home Launcher
+- Re-Organized preferences in Device info Settings and removed the unused ones
+- Added XOSP Site, XOSP Translations and XOSP Device sources links to About
+- Moved all the custom XOSP Features to 3 new fragments
+- Moved On The go preference to Misc Personalizations, to make it more visible to the users
+- Approach a new type of layout for XOSP Settings (Credits to : @snak3ater)
+- Updated IMT colors
+- Included translations for Turkish, Indonesian and French language
+- XOSP is now official for all LG G3 variants which would be: d850,d851,d855,f400 and ls990
+- Updated default wallpaper
+- Added an option in power menu to restart SystemUI 
+- Show the Marshmallow logo instead of No recent apps in recent apps
+- Removed RAM Bar from recents
+- Reverted all the IMT colors for Dialer and switched to a much more lighter interface
+- Updated colors for Contacts app (Much more Xperia Style)
+- Colors and general improvements for XOSPOTA
+- Update Music to version: 9.1.6.A.0.1 
+- Switched Music to a stable build, fixed some stability issues and added 3 missing libs
+- Update Album to version: 7.6.A.0.6 and it's relative libs
+- Update AudioRecorder to version: 2.00.12
+- Update Sketch to version: 7.0.A.0.5
+- Update Home to version: 10.0.A.0.8
+- Update Xperia Keyboard to version: 7.1.A.0.28
+- Remove WeatherWidget (Deprecated)
+- Included some missing required frameworks and they are: com.sony.device.jar com.sonyericsson.system.jar com.sonyericsson.updatecenter.jar and com.sonyericsson.uxp.jar. 
+- Updated instead com.sonyericsson.uxpres.jar to a more recent version
+
+
 ##RL4 Revision 2
 
 - Sources synced with the latest ones from CM
