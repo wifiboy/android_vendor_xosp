@@ -157,7 +157,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     XOSPSetupWizard \
     LiveWallpapersPicker \
-    LiveLockScreenService
+    LiveLockScreenService \
+    WeatherProvider
 
 # Exchange support
 PRODUCT_PACKAGES += \
