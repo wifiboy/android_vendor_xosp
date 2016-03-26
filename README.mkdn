@@ -7,6 +7,32 @@
         Based on Android 6.0X        
 **************************************
 
+##RL5 Revision 2
+
+- Sources synced with the latest ones from CM
+- Added new Xperia Battery Text prototype as default battery icon in Status Bar
+- Approach a new Bootanimation style (Not completed yet but much better than the original one)
+- Display a Headset icon in status bar when plugged
+- Implement XOSP Universal dialog for Shutdown/Reboot and Dexopting Process
+- Time Contextual Headers
+- Added Modern and Poly HD Contextual headers choices
+- Fixed NavBar icons for xxxhdpi devices 
+- Removed Recents MemBar (Not working correctly on x86 based devices)
+- Hidden for now the ability to change LockScreen wallpaper (Not ready)
+- Fixed some miss placed dashboard tiles
+- Removed Regulatory info preference from Device Info Settings
+- XOSP goes now official for Bacon sprout8 and h811
+- Update Weather to version: 1.1.A.0.20
+- Update Album to version: 7.6.A.0.8 
+- Bring back WeatherWidget
+- Update Video to version: 9.5.A.0.20
+- Add PhotoAnalyzer Service for Album
+- Update PhotoEditor to version: 6.0.A.0.9 
+- Update Music to version: 9.1.7.A.1.0 
+- Update Sketch to version: 7.1.A.0.1 
+- Update Xperia Keyboard to version: 7.2.A.0.32
+- Improved TrackID (Add TrackID relative libs and improved stability cross devices)
+
 ##RL5 Revision 1
 
 - Sources synced with the latest ones from CM
