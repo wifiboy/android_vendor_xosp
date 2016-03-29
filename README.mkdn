@@ -11,7 +11,8 @@
 
 - Sources synced with the latest ones from CM
 - Added new Xperia Battery Text prototype as default battery icon in Status Bar
-- Approach a new Bootanimation style (Not completed yet but much better than the original one)
+- Fixed Default wallpaper position on hdpi and xhdpi devices
+- Approach a new Bootanimation style, much more fluid and lagless
 - Display a Headset icon in status bar when plugged
 - Implement XOSP Universal dialog for Shutdown/Reboot and Dexopting Process
 - Time Contextual Headers
