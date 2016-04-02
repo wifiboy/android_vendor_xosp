@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     CMSettingsProvider \
     XOSPSetupWizard \
-    LiveWallpapersPicker 
+    LiveWallpapersPicker \
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
