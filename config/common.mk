@@ -128,10 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/xosp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/xosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
-# Live lockscreen
-PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/org.cyanogenmod.livelockscreen.xml:system/etc/permissions/org.cyanogenmod.livelockscreen.xml
-
 # Theme engine
 include vendor/xosp/config/themes_common.mk
 
