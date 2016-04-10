@@ -7,6 +7,39 @@
         Based on Android 6.0X        
 **************************************
 
+##RL5 Revision 3
+
+- Sources synced with the latest ones from CM
+- Switched to Android 6.0.1_r24
+- April security patch level
+- Updated Settings launcher icon (More Xperia style)
+- StatusBar Clock font style
+- Added 18 StatusBar Clock fonts
+- StatusBar Clock font size 
+- Added StatusBar Date & style options 
+- Added option for date style/position, left-right of clock
+- Take down Indigo color for Settings
+- Implemented a new range of colors for whole Framework including SystemUI and also Settings
+- Redesigned Keyguard visual clock (Xperia LockScreen style)
+- Added Xperia proprietary fonts
+- Debranded DT ADB icon
+- Included many optimizations and bugfixes commits for whole framework 
+- Small updates for SetupWizard (Updated colors and description)
+- XOSP goes now official for d852
+- Added new Xperia X wallpapers and removed old ones
+- Updated default wallpaper (Xperia X style)
+- Updated Home to version 10.0.A.24
+- DT2S on Home Screen is now available
+- Fixed Uninstall issue present in the old Home release 
+- Update Album to version: 7.7.A.0.0
+- Update TrackID to version: 4.3.B.6.1
+- Update SemcCalendar to version: 20.1.A.1.11
+- Add SomcPodcast (Available from Music app)
+- Removed deprecated Music libs
+- Added 9 new libs (GraceNote propietary) which will allow to download music info for each song, so all the powered GraceNote functions in Music now works perfectly.
+- Fixed also the issue regarding "Update as you play" preference which enabled cause Music to crash when playing a song
+- Some more other optimizations and minor changes
+
 ##RL5 Revision 2
 
 - Sources synced with the latest ones from CM
