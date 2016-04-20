@@ -33,35 +33,3 @@ function xosp_device_combos() {
         add_lunch_combo "xosp_${device}-${variant}"
     done < "${list_file}"
 }
-
-function build_xospapps()
-{
-    
-    cd xosp_apps
-    mkdir out
-    cd out
-    mkdir system 
-    cd ..
-    
-    ARCHTARGET=$(get_build_var TARGET_ARCH)
-    DEVICETARGET=$(get_build_var TARGET_DEVICE)
-    PRODUCT_OUT=$(get_build_var PRODUCT_OUT)
-    DATE=` date +%d-%m-%Y`
-    XOSPATH=$PRODUCT_OUT/install/xospapps
-    mkdir -p $XOSPATH
-    
-    cp -avr Script/META-INF out >&/dev/null
-    cp -avr Sources/system out >&/dev/null
-    cd out
-    UPDATERPATH=META-INF/com/google/android
-    
-    sed -i '8 a TARGET_DEVICE='$DEVICETARGET'' $UPDATERPATH/update-binary
-    zip -r "XOSPApps".zip META-INF system >&/dev/null
-    mv "XOSPApps.zip" $XOSPATH
-    rm -rf META-INF
-    rm -rf system
-    cd ..
-    rm -rf out
-    cd ..
-}
-

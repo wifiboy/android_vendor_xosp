@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 		$(FONTS_VENDOR_PATH)/.SSTVietnamese-Roman.ttf:$(FONTS_SYSTEM_PATH)/.SSTVietnamese-Roman.ttf
 
 
-
+$(call inherit-product, xosp_apps/xosp_apps_essentials.mk)
 
 
 
