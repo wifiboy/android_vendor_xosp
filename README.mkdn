@@ -7,6 +7,44 @@
         Based on Android 6.0X        
 **************************************
 
+##RL5 Revision 4
+
+- Sources synced with the latest ones from CM
+- Switched to Android 6.0.1_r30 
+- XOSPApps are now separated (Please refer to this post: https://plus.google.com/u/0/+C%C4%83linNeam%C5%A3u/posts/ZZe6inbDXGd for more info)
+- Added in Settings verification to make the user know if he is not running the XOSPApps on his phone
+- Show Dexopt dialog in all cases (This will ensure, that even on a clean install the optimization apps dialog will be displayed)
+- LockScreen is partially fixed (There is still problem with the bouncing effect but for the rest everything is fine)
+- FAB Button in Recent apps 
+- 5 Available positions for FAB button (Top right, Top left,Top center,Bottom right,Bottom left and Bottom center)
+- Fade in and fade out animations for FAB button
+- Updated No recents app image (logo)
+- Added Android N concept style Notification Drawer
+- Centered the Xperia battery icon text
+- NavigationBar is now Tinted
+- Added the possibility to show Seconds in time (Status Bar clock)
+- Added the possibility to show current charging in mAh in Lockscreen
+- Updated mipmap Settings icon
+- Updated ViperFX Audio Engine to version 2.4.0.1
+- GApps now are backuped during an upgrade (So no more to flash them again if you're doing a dirty install)
+- ViperFX configuration and installed lib are now backuped during an upgrade
+- Added SomcDLNA and relative components
+- Possibility now to Screen Cast from Album and Music
+- Screen Casting from Video app is broken,but you can cast videos from Album app (It works really good)
+- Optimized also for x86 based devices
+- Update Clock Widgets to version: 5.2.A.0.2
+- Update Xperia Home to version: 10.0.A.0.30
+- Removed News Suite
+- Re-Added Smart Connect and updated it to version: 5.7.28.715
+- Update provider tasks jar to MMB29V.Z1.3561
+- Update Album to version: 7.7.A.0.4
+- Update Weather to version: 1.1.A.0.22
+- Update TrackID to version: 4.4.B.0.3
+- Update Music to version: 9.1.8.A.1.1
+- Update Sketch to version: 7.1.A.0.5
+- Update SemCalendar to version: 20.1.A.1.15
+- And some more other commits and optimizations ROM wide 
+
 ##RL5 Revision 3
 
 - Sources synced with the latest ones from CM
