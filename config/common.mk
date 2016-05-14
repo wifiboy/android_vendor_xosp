@@ -231,7 +231,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/xosp/overlay/common
 PRODUCT_RELEASE = RL5
 PRODUCT_REVISION = 4
 PRODUCT_REVISION_PROP = Revision4
-XOSP_APPS_CHECK = true
 BUILD_MAJOR=5
 BUILD_MINOR=4
 
@@ -261,7 +260,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.xosp.releasetype=$(XOSP_BUILDTYPE) \
   ro.xosp.release=$(PRODUCT_RELEASE) \
   ro.xosp.revision=$(PRODUCT_REVISION_PROP) \
-  ro.xosp.apps=$(XOSP_APPS_CHECK) \
   ro.modversion=$(XOSP_VERSION) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
 
