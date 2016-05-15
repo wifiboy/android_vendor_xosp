@@ -263,8 +263,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(XOSP_VERSION) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
 
--include vendor/xosp-priv/keys/keys.mk
-
 XOSP_DISPLAY_VERSION := $(XOSP_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
