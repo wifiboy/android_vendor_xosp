@@ -62,7 +62,7 @@ PRODUCT_COPY_FILES += \
     vendor/xosp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
-# CM-specific init file
+# XOSP-specific init file
 PRODUCT_COPY_FILES += \
     vendor/xosp/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
@@ -165,7 +165,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
-# Extra tools in CM
+# Extra tools in XOSP
 PRODUCT_PACKAGES += \
     libsepol \
     mke2fs \
