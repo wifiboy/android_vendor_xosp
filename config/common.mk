@@ -64,7 +64,7 @@ endif
 
 # XOSP-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/xosp/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+    vendor/xosp/prebuilt/common/etc/init.local.rc:root/init.xosp.rc
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
