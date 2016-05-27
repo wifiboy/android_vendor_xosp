@@ -7,6 +7,36 @@
         Based on Android 6.0X        
 **************************************
 
+##RL6 Revision 1
+
+- Sources synced with the latest ones from CM
+- Fully fixed the lockscreen
+- Fixed Sepolicy denials (Now the ROM is built again in Enforcing for all devices so you can apply custom kernels)
+- ViPER fully working in Enforcing mode
+- Take down XOSPOTA
+- Add XOSPDelta (Available only for Official devices)
+- Completely redesigned the Settings UI (Xperia X based concept)
+- Many UI additions to InCallUI including also elements from Xperia X InCallUI
+- Added lux,surnia,titan,oneplus2,lettuce,tomato,angler,h815 and falcon to the Official devices
+- Removed instead i9100,d850,d852,ls990 and f400 from the Official devices for known reasons
+- Removed DeskClock
+- Added and completely ported SemcClock with Alarm working too
+- Updated material_blue_grey palette colors
+- Fixed and updated Sysbar icons (Nav Bar icons) in landscape mode
+- Implemented Color Picker including also a unique flat palette of 8 selected colors 
+- Added show carrier label/custom & change color
+- Implemented Slim custom Doze options
+- Fixed and enabled again Keyguard lockscreen changer (Lockscreen wallpaper changer)
+- Task Manager optimizations
+- Updated XOSP Logo ROM wide (Settings, framework)
+- Add check whether wallpaper's size has changed
+- SystemUI: Add boot completed check to recents (This fixes stuck on "Preparing Contacts Storage" issue on certain devices like Nexus and Yuphoria)
+- Removed NavBar tint implementation
+- Removed the possibility to choose other statusbar battery styles
+- Updated Xperia Home to version: 10.0.A.0.40 beta
+
+**XOSPApps are now separated so a new separated changelog will be created as well 
+
 ##RL5 Revision 4
 
 - Sources synced with the latest ones from CM
