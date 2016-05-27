@@ -39,13 +39,11 @@ PRODUCT_COPY_FILES += \
     vendor/xosp/README.mkdn:system/etc/Changelog.txt
 
 # Backup Tool
-ifeq (,$(filter true, $(CYNGN_TARGET) $(EXTERNAL_CLEAN_TARGET)))
 PRODUCT_COPY_FILES += \
     vendor/xosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/xosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/xosp/prebuilt/common/bin/50-xosp.sh:system/addon.d/50-xosp.sh \
     vendor/xosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
-endif
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
