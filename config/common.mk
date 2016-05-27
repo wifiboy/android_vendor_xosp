@@ -243,9 +243,9 @@ endif
 ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
         XOSP_VERSION := XOSP-$(BUILD_MAJOR).$(BUILD_MINOR)-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
         
-        #Build XOSPOTA if the target product is an official one
-			PRODUCT_PACKAGES += \
-			XOSPOTA
+		#Copy the prebuilt XOSPDelta if the device is official!
+		PRODUCT_COPY_FILES += \
+			vendor/xosp/prebuilt/common/apps/XOSPDelta.apk:system/priv-app/XOSPDelta/XOSPDelta.apk
 
 else
     # If XOSP_BUILDTYPE is not defined, set to UNOFFICIAL
