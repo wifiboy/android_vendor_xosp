@@ -119,7 +119,8 @@ PRODUCT_COPY_FILES += \
     vendor/xosp/prebuilt/common/addon.d/23-v4a.sh:system/addon.d/23-v4a.sh \
     vendor/xosp/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
     vendor/xosp/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-    vendor/xosp/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh 
+    vendor/xosp/prebuilt/common/su.d/50viper.sh:system/su.d/50viper.sh \
+    vendor/xosp/prebuilt/common/xbin/busybox:system/xbin/busybox
 
 # SuperSU
 PRODUCT_COPY_FILES += \
