@@ -7,6 +7,37 @@
         Based on Android 6.0X        
 **************************************
 
+##RL6 Revision 2
+- Sources synced with the latest ones from CM
+- Switched to Android 6.0.1_r46
+- June security patch level
+- NetPluginDelegate: Disable SPAM in log
+- CallInBackground: Do not block HOME
+- Lockscreen blur & see through
+- SystemUI: Switched the qs signal stock icons to the Xperia ones
+- SystemUI: Updated Somc battery text background
+- SystemUI: Fixes in status_bar layout (No more layout problems when the battery reach the 100% and no more empty space when the battery level is lower than 10%)
+- Switched Lockscreen target icons with the Xperia ones
+- Created a separate category for Lockscreen stuff in Settings
+- Fix NavBar icons sizes especially the Home one (If you see the recents button a bit smaller, it's normal go out and check this: http://www.gizmobolt.com/wp-content/uploads/2015/02/Xperia-Z4-Dual-Android-5.0.2-Lollipop-screenshots.png )
+- Fix SystemUI restart command from power menu
+- Materialized new XOSP logo ROM wide
+- Fixed SlimDim doze options in Display settings (Now they're visible for supported devices)
+- Fixed Wi-fi country code preferences in Settings (Originally it was causing Settings to crash when accessing)
+- Settings: Updated Settings drawables (Now themes should apply in a more friendly way)
+- Settings: Updated Weather icon
+- Settings: Fixed glitchy icons from Battery section
+- Automatic Translations import
+- Add prebuilt BusyBox (Required for ViPER)
+- XOSP-ified ViPER (More infos here: https://github.com/XOSP-Project/android_vendor_xosp/commit/24170a5633753490b81268170cb96b442cf4846f )
+- Added XOSP official wallpapers
+- Fixed some dimensions in InCallUI
+- XOSPDelta is fully working now (It is a User app, so please DO NOT uninstall it if you want to receive and apply DELTA updates)
+- Removed stock Email app
+- Added SomcEmail (Ported from Xperia X System Dump)(Initial release)
+- Updated Home to version: 10.0.A.0.53
+- Other minor fixes
+
 ##RL6 Revision 1
 
 - Sources synced with the latest ones from CM
