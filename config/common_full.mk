@@ -6,9 +6,6 @@ include vendor/xosp/config/xosp_audio.mk
 
 PRODUCT_SIZE := full
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
-
 # Optional XOSP packages
 PRODUCT_PACKAGES += \
     Screencast
