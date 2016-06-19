@@ -246,7 +246,7 @@ ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
         
 		#Copy the prebuilt XOSPDelta if the device is official!
 		PRODUCT_COPY_FILES += \
-			vendor/xosp/prebuilt/common/apps/XOSPDelta.apk:install/XOSPDelta/XOSPDelta/XOSPDelta.apk
+			vendor/xosp/prebuilt/common/XOSPDelta.zip:install/xospdelta/XOSPDelta.zip
 
 else
     # If XOSP_BUILDTYPE is not defined, set to UNOFFICIAL
