@@ -7,6 +7,62 @@
         Based on Android 6.0X        
 **************************************
 
+##RL6 Revision 3 (FINAL MM)
+
+- Sources synced with the latest ones from CM
+- Switched to Android 6.0.1_r52
+- Removed the possibility to view ViPER in drawer mode (Was causing crashes)
+- Updated XOSP Default wallpaper 
+- Removed bacon from our official list and added bullhead,d802,d850,kenzo,onyx,oneplus2,shieldtablet,tomato and wt88047 to our official devices list
+- Updated XOSPDelta:
+	- Support for auto downloads Detas
+	- Updated drawables
+	- Minor Bugfixes
+- Added the possibility to Enable or not National data roaming
+- Added controller for in-call proximity sensor
+- Added controller for proximity speaker
+- Added the Breathing mode feature for missed/voicemail
+- Added the possibility to flip to mute/reject a call
+- Added the possbility to disable the screen to wake up on disconnected calls
+- Added the possibility to switch from non intrusive calls to intrusive calls and viceversa for InCallUI
+- Added the possibility to show 4G instead of LTE in QS Panel
+- Implemented XOSP Blur personalization options which include:
+	- Blurred expanded StatusBar
+	- Translucent Notifications
+	- Ability to select the amount of transluency for Notifications
+	- Blurred StausBar header
+	- Ability to select the amount of transluency for StatusBar header
+	- Blurred QS in Notification Header expanded
+	- Ability to select the amount of transluency for Expanded Notifications header
+	- Ability to change Blur Radius and Blur scale
+- Updated default contextual headers images
+- Fixed not updating contextual headers images when switching through modern,default and poly
+- Lockscreen quick unlock
+- Screenshot delay (Available in power menu)
+- Added the ability to switch off the Headset icon in statusbar (Available in Settings)
+- Updated our Site links in About phone by adding links to our: FB page, XOSP Downloads page,XOSP Official page and Jenkins page
+- Fixed Network indicator not disappearing when auto hide was switched ON
+- Add Xposed Installer check (for Logcats)
+- Updated XOSP Banner in Settings (Now it's animated just like in the XOSP XDA Threads)
+- Restored back stock material icons for Settings (As voted in the community)
+- Added instead a custom icon pack just for Settings which it will bring up again the Xperia icons available to apply from CMTE
+- Resized Xperia icons in the icon pack (Previously they weren't sized well on all devices)
+- Vectorized XOSPSettings and XOSPDelta icons in Settings
+- Added CardStyle effect in Settings
+- Improved XOSPApps verification in About phone
+- Automatic translations import
+- Update Home to version: 10.0.A.0.63
+- Update textinput-tng to version: 7.3.A.0.26 (Just for arm and x86 devices)
+- Made Album an essential XOSPApp so now it is included directly in the ROM
+- Fixed Album crashing on arm64 (It should be now :v )
+- Many other optimizations included which I'm now going to stay here and list them
+
+###XOSPApps 6.3 Changelog
+
+- Update SemcCalendar to version: 20.1.A.1.20
+- Update Video to version: 9.5.A.1.4
+- Update Music to version: 9.1.12.A.1.0  
+
 ##RL6 Revision 2
 - Sources synced with the latest ones from CM
 - Switched to Android 6.0.1_r46
