@@ -253,6 +253,9 @@ ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
 		PRODUCT_COPY_FILES += \
 			vendor/xosp/prebuilt/common/XOSPDelta.zip:install/xospdelta/XOSPDelta.zip
 
+else ifeq ($(XOSP_BUILDTYPE), EXPERIMENTAL)
+        XOSP_VERSION := XOSP-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
+
 else
     # If XOSP_BUILDTYPE is not defined, set to UNOFFICIAL
     XOSP_BUILDTYPE := UNOFFICIAL
