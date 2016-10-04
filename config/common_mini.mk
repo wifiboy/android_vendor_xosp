@@ -1,4 +1,4 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common XOSP stuff
+$(call inherit-product, vendor/xosp/config/common.mk)
 
 PRODUCT_SIZE := mini
