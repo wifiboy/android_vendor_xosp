@@ -41,10 +41,6 @@ endif
 # Copy over the changelog to the device
 #PRODUCT_COPY_FILES += \
     #vendor/xosp/README.mkdn:system/etc/Changelog.txt
-
-# Bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/xosp/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
     
 # Backup Tool
 PRODUCT_COPY_FILES += \
