@@ -44,7 +44,7 @@ endif
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/xosp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/xosp/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
     
 # Backup Tool
 PRODUCT_COPY_FILES += \
