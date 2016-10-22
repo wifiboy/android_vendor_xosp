@@ -235,12 +235,12 @@ ifndef XOSP_BUILDTYPE
     endif
 endif
 
-ifeq ($(XOSP_BUILDTYPE), OFFICIAL) 			
+ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
     XOSP_VERSION := XOSP-$(BUILD_MAJOR).$(BUILD_MINOR)-PREALPHA-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
     #Copy the prebuilt XOSPDelta if the device is official!
       #PRODUCT_COPY_FILES += \
-        vendor/xosp/prebuilt/common/XOSPDelta.zip:install/xospdelta/XOSPDelta.zip 			
-else ifeq ($(XOSP_BUILDTYPE), EXPERIMENTAL) 	
+        vendor/xosp/prebuilt/common/XOSPDelta.zip:install/xospdelta/XOSPDelta.zip
+else ifeq ($(XOSP_BUILDTYPE), EXPERIMENTAL)
     XOSP_VERSION := XOSP-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD) 
 
 else
@@ -256,7 +256,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.xosp.releasetype=$(XOSP_BUILDTYPE) \
   ro.xosp.release=$(PRODUCT_RELEASE) \
   ro.xosp.revision=$(PRODUCT_REVISION_PROP) \
-  ro.modversion=$(CM_VERSION)
+  ro.modversion=$(XOSP_VERSION)
 
 XOSP_DISPLAY_VERSION := $(XOSP_VERSION)
 
