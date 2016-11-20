@@ -238,8 +238,9 @@ endif
 ifeq ($(XOSP_BUILDTYPE), OFFICIAL)
     XOSP_VERSION := XOSP-$(BUILD_MAJOR).$(BUILD_MINOR)-BETA-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
     #Copy the prebuilt XOSPDelta if the device is official!
-      #PRODUCT_COPY_FILES += \
+      PRODUCT_COPY_FILES += \
         vendor/xosp/prebuilt/common/XOSPDelta.zip:install/xospdelta/XOSPDelta.zip
+
 else ifeq ($(XOSP_BUILDTYPE), EXPERIMENTAL)
     XOSP_VERSION := XOSP-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD) 
 
