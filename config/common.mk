@@ -130,7 +130,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
-    Screencast
+    Screencast \
+    Equalizer
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -256,7 +257,6 @@ else
     XOSP_BUILDTYPE := UNOFFICIAL
     XOSP_VERSION := XOSP-$(BUILD_MAJOR).$(BUILD_MINOR)-BETA-$(XOSP_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(XOSP_BUILD)
 endif
-
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
