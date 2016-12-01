@@ -100,6 +100,11 @@ ifneq ($(TARGET_DISABLE_CMSDK), true)
 include vendor/xosp/config/cmsdk_common.mk
 endif
 
+
+# Bootanimation
+PRODUCT_PACKAGES += \
+    bootanimation.zip
+
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
