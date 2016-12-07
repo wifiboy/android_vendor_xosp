@@ -12,9 +12,6 @@ Additional CyanogenMod functions:
 - cmremote:        Add git remote for CM Gerrit Review.
 - aospremote:      Add git remote for matching AOSP repository.
 - cafremote:       Add git remote for matching CodeAurora repository.
-- mka:             Builds using SCHED_BATCH on all processors.
-- mkap:            Builds the module(s) using mka and pushes them to the device.
-- cmka:            Cleans and builds using mka.
 - repodiff:        Diff 2 different branches or tags within the same repo
 - repolastsync:    Prints date and time of last repo sync.
 - reposync:        Parallel repo sync using ionice and SCHED_BATCH.
@@ -26,10 +23,11 @@ EOF
 
 function brunch()
 {
-    breakfast $*
+    breakfast $1
     if [ $? -eq 0 ]; then
         xospapps_essentials
-        mka xosp
+        make xosp $2
+        del_xospapps_essentials
     else
         echo "No such item in brunch menu. Try 'breakfast'"
         return 1
@@ -232,6 +230,10 @@ function dddclient()
    fi
 }
 
+function del_xospapps_essentials(){
+  rm -rf temp_essentials_xosp_apps
+}
+
 function xospapps_essentials(){
 
     #First we should check for the connection
@@ -331,8 +333,26 @@ function xospapps_essentials(){
                 echo -e "Couldn't download, please check your connection!"
                 exit 0
             fi
-            cd ..
         else
+            echo -e "Couldn't download, please check your connection!"
+            exit 0
+        fi
+        echo -e "Downloading SemCalendar..."
+        if wget http://essentials.xospapps.xosp.org/essentials/SemCalendar/SemCalendar.apk; then
+            mkdir -p essentials/SemCalendar
+            mv SemCalendar.apk essentials/SemCalendar
+            sleep 2
+        else 
+            echo -e "Couldn't download, please check your connection!"
+            exit 0
+        fi
+        echo -e "Downloading Pardana Files..."
+        if wget http://essentials.xospapps.xosp.org/essentials/PardanaFiles.zip; then
+            mkdir -p essentials/PardanaFiles
+            unzip PardanaFiles.zip -d essentials/PardanaFiles >/dev/null
+            
+            sleep 2
+        else 
             echo -e "Couldn't download, please check your connection!"
             exit 0
         fi
@@ -341,6 +361,7 @@ function xospapps_essentials(){
         rm -rf temp_essentials_xosp_apps
         exit 0
     fi
+    cd ..
 }
 
 function cmremote()
@@ -782,42 +803,6 @@ function cmrebase() {
     cd $pwd
 }
 
-function mka() {
-    local T=$(gettop)
-    if [ "$T" ]; then
-        case `uname -s` in
-            Darwin)
-                make -C $T -j `sysctl hw.ncpu|cut -d" " -f2` "$@"
-                ;;
-            *)
-                mk_timer schedtool -B -n 10 -e ionice -n 7 make -C $T -j$(cat /proc/cpuinfo | grep "^processor" | wc -l) "$@"
-                ;;
-        esac
-
-    else
-        echo "Couldn't locate the top of the tree.  Try setting TOP."
-    fi
-}
-
-function cmka() {
-    if [ ! -z "$1" ]; then
-        for i in "$@"; do
-            case $i in
-                xosp|otapackage|systemimage)
-                    mka installclean
-                    mka $i
-                    ;;
-                *)
-                    mka clean-$i
-                    mka $i
-                    ;;
-            esac
-        done
-    else
-        mka clean
-        mka
-    fi
-}
 
 function mms() {
     local T=$(gettop)
@@ -1021,8 +1006,6 @@ EOF
 alias mmp='dopush mm'
 alias mmmp='dopush mmm'
 alias mmap='dopush mma'
-alias mkap='dopush mka'
-alias cmkap='dopush cmka'
 
 function repopick() {
     T=$(gettop)
