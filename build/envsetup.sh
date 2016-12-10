@@ -1007,6 +1007,7 @@ EOF
 alias mmp='dopush mm'
 alias mmmp='dopush mmm'
 alias mmap='dopush mma'
+alias mmmap='dopush mmma'
 
 function repopick() {
     T=$(gettop)
