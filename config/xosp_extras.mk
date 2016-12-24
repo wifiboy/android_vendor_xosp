@@ -43,6 +43,9 @@ PRODUCT_COPY_FILES += \
 		$(FONTS_VENDOR_PATH)/.SST-UltraLightItalic.ttf:$(FONTS_SYSTEM_PATH)/.SST-UltraLightItalic.ttf \
 		$(FONTS_VENDOR_PATH)/.SSTVietnamese-Bold.ttf:$(FONTS_SYSTEM_PATH)/.SSTVietnamese-Bold.ttf \
 		$(FONTS_VENDOR_PATH)/.SSTVietnamese-Roman.ttf:$(FONTS_SYSTEM_PATH)/.SSTVietnamese-Roman.ttf
+	
+PRODUCT_COPY_FILES += \
+		vendor/xosp/prebuilt/common/app/XOSPChangeLOG.apk:system/app/XOSPChangeLOG/XOSPChangeLOG.apk
 
 $(call inherit-product, vendor/xosp/xosp_apps_essentials.mk)
 
