@@ -15,6 +15,11 @@
 -->
 <changelog bulletedList="true">
     
+    <changelogversion versionName="RL7 Revision 1" changeDate="Dec 25,2016">
+        <changelogtext> Initial XOSP Nougat Release </changelogtext>
+        <changelogtext><![CDATA[All the initial included features can be found <a href="https://github.com/XOSP-Project/android_vendor_xosp/blob/xosp-n/xosp_features.mkdn">here</a>]]></changelogtext>
+    </changelogversion>
+
     <changelogversion versionName="RL6 Revision 3 (FINAL MM)" changeDate="Jul 11,2016">
         <changelogtext> Sources synced with the latest ones from CM</changelogtext>
         <changelogtext>Switched to Android 6.0.1_r52</changelogtext>
