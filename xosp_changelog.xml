@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Xperia Open Source Project
+     
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<changelog bulletedList="true">
+    
+    <changelogversion versionName="RL7 Revision 1" changeDate="Dec 25,2016">
+        <changelogtext> Initial XOSP Nougat Release </changelogtext>
+        <changelogtext><![CDATA[All the initial included features can be found <a href="https://github.com/XOSP-Project/android_vendor_xosp/blob/xosp-n/README.mkdn">here</a>]]></changelogtext>
+    </changelogversion>
+
+    <changelogversion versionName="RL6 Revision 3 (FINAL MM)" changeDate="Jul 11,2016">
+        <changelogtext> Sources synced with the latest ones from CM</changelogtext>
+        <changelogtext>Switched to Android 6.0.1_r52</changelogtext>
+        <changelogtext>Removed the possibility to view ViPER in drawer mode (Was causing crashes)</changelogtext>
+        <changelogtext>Updated XOSP Default wallpaper</changelogtext>
+        <changelogtext>Removed bacon from our official list and added bullhead,d802,d850,kenzo,onyx,oneplus2,shieldtablet,tomato and wt88047 to our official devices list</changelogtext>
+        <changelogtext>Updated XOSPDelta:
+            Support for auto downloads Detas
+            Updated drawables
+            Minor Bugfixes</changelogtext>
+        <changelogtext>Added the possibility to Enable or not National data roaming</changelogtext>
+        <changelogtext>Added controller for in-call proximity sensor</changelogtext>
+        <changelogtext>Added controller for proximity speaker</changelogtext>
+        <changelogtext>Added the Breathing mode feature for missed/voicemail</changelogtext>
+        <changelogtext>Added the possibility to flip to mute/reject a call</changelogtext>
+        <changelogtext>Added the possbility to disable the screen to wake up on disconnected calls</changelogtext>
+        <changelogtext>Added the possibility to switch from non intrusive calls to intrusive calls and viceversa for InCallUI</changelogtext>
+        <changelogtext>Added the possibility to show 4G instead of LTE in QS Panel</changelogtext>
+        <changelogtext>Implemented XOSP Blur personalization options which include:
+            Blurred expanded StatusBar
+            Translucent Notifications
+            Ability to select the amount of transluency for Notifications
+            Blurred StausBar header
+            Ability to select the amount of transluency for StatusBar header
+            Blurred QS in Notification Header expanded
+            Ability to select the amount of transluency for Expanded Notifications header
+            Ability to change Blur Radius and Blur scale</changelogtext>
+        <changelogtext>Updated default contextual headers images</changelogtext>
+        <changelogtext>Fixed not updating contextual headers images when switching through modern,default and poly</changelogtext>
+        <changelogtext>Lockscreen quick unlock</changelogtext>
+        <changelogtext>Screenshot delay (Available in power menu)</changelogtext>
+        <changelogtext>Added the ability to switch off the Headset icon in statusbar (Available in Settings)</changelogtext>
+        <changelogtext>Updated our Site links in About phone by adding links to our: FB page, XOSP Downloads page,XOSP Official page and Jenkins page</changelogtext>
+        <changelogtext>Fixed Network indicator not disappearing when auto hide was switched ON</changelogtext>
+        <changelogtext>Add Xposed Installer check (for Logcats)</changelogtext>
+        <changelogtext>Updated XOSP Banner in Settings (Now it's animated just like in the XOSP XDA Threads)</changelogtext>
+        <changelogtext>Restored back stock material icons for Settings (As voted in the community)</changelogtext>
+        <changelogtext>Added instead a custom icon pack just for Settings which it will bring up again the Xperia icons available to apply from CMTE</changelogtext>
+        <changelogtext>Resized Xperia icons in the icon pack (Previously they weren't sized well on all devices)</changelogtext>
+        <changelogtext>Vectorized XOSPSettings and XOSPDelta icons in Settings</changelogtext>
+        <changelogtext>Added CardStyle effect in Settings</changelogtext>
+        <changelogtext>Improved XOSPApps verification in About phone</changelogtext>
+        <changelogtext>Automatic translations import</changelogtext>
+        <changelogtext>Update Home to version: 10.0.A.0.63</changelogtext>
+        <changelogtext>Update textinput-tng to version: 7.3.A.0.26 (Just for arm and x86 devices)</changelogtext>
+        <changelogtext>Made Album an essential XOSPApp so now it is included directly in the ROM</changelogtext>
+        <changelogtext>Fixed Album crashing on arm64 (It should be now :v )</changelogtext>
+        <changelogtext>Many other optimizations included which I'm not going to stay here and list them</changelogtext>
+    </changelogversion>
+
+</changelog>
