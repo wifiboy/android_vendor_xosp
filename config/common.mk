@@ -210,6 +210,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
+# Pixel Launcher
+PRODUCT_COPY_FILES += \
+    vendor/xosp/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/xosp/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/PixelLauncher/WallpaperPickerGooglePrebuilt.apk
+    
+# Google Dialer 
+PRODUCT_COPY_FILES += \
+    vendor/xosp/prebuilt/common/app/googledialer.apk:system/priv-app/GoogleDialer/googledialer.apk
+
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
